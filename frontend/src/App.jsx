@@ -17,6 +17,7 @@ function App() {
            <Route path="/register" element={<Register></Register>}></Route>
       </Routes>
     </BrowserRouter>
+
   )
 }
 
