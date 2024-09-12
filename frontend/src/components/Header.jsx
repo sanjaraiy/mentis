@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
     
@@ -83,12 +84,12 @@ function Header() {
           </a>
 
           <div class="hidden sm:flex">
-            <a
+            <Link
               class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-gray-800 hover:bg-gray-400"
-              href="#"
+              to="/register"
             >
               Register
-            </a>
+            </Link>
           </div>
         </div>
 
