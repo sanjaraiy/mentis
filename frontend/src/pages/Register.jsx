@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Register() {
   return (
     <>
-        <section className="bg-gray-900 py-44">
+        <section className="bg-gray-900 py-24 w-full h-full md:py-40">
        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
       <Link to="#" className="flex items-center mb-6 text-2xl font-semibold  text-white">
           <img className="w-54 h-54 mr-2" src="/logo.svg" alt="logo"/>
@@ -16,14 +16,14 @@ function Register() {
                   Create an account
               </h1>
               <form className="space-y-4 md:space-y-6" method='POST' action="">
-                  <div className='flex flex-row gap-2'>
+                  <div className='flex flex-row justify-between gap-2'>
                   <div>
                       <label for="first_name" className="block mb-2 text-sm font-medium  text-white">First name</label>
-                      <input type="text" name="first_name" id="first_name" className="border   text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="John" required=""/>
+                      <input type="text" name="first_name" id="first_name" className="border  block text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="John" required=""/>
                   </div>
                   <div>
                       <label for="last_name" className="block mb-2 text-sm font-medium  text-white">Last name</label>
-                      <input type="text" name="last_name" id="last_name" className="border   text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="Deo" required=""/>
+                      <input type="text" name="last_name" id="last_name" className="border  block  text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600  w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="Deo" required=""/>
                   </div>
                   </div>
                   <div>
