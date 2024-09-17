@@ -3,6 +3,7 @@ import Layout from "./layout/Layout"
 import Home from "./pages/Home"
 import { Button } from "./components/ui/button"
 import Register from "./pages/Register"
+import LogIn from "./pages/LogIn"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
            <Route index element={<Home></Home>}></Route>
         </Route>
            <Route path="/register" element={<Register></Register>}></Route>
+           <Route path="/login" element={<LogIn></LogIn>}></Route>
       </Routes>
     </BrowserRouter>
 

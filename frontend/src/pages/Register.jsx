@@ -16,6 +16,7 @@ function Register() {
                   Create an account
               </h1>
               <form className="space-y-4 md:space-y-6" method='POST' action="">
+                  <div className='flex flex-row gap-2'>
                   <div>
                       <label for="first_name" className="block mb-2 text-sm font-medium  text-white">First name</label>
                       <input type="text" name="first_name" id="first_name" className="border   text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="John" required=""/>
@@ -23,6 +24,7 @@ function Register() {
                   <div>
                       <label for="last_name" className="block mb-2 text-sm font-medium  text-white">Last name</label>
                       <input type="text" name="last_name" id="last_name" className="border   text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="Deo" required=""/>
+                  </div>
                   </div>
                   <div>
                       <label for="email" className="block mb-2 text-sm font-medium  text-white">Your email</label>
@@ -43,7 +45,7 @@ function Register() {
                   
                   <button type="submit" className="w-full text-white bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center hover:bg-blue-700">Create an account</button>
                   <p className="text-sm font-light  text-gray-400">
-                      Already have an account? <a href="#" className="font-medium hover:underline text-primary-500">Login here</a>
+                      Already have an account? <Link to={'/login'} className="font-medium hover:underline text-primary-500">Login here</Link>
                   </p>
               </form>
           </div>

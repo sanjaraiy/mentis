@@ -76,12 +76,12 @@ function Header() {
 
       <div class="flex items-center gap-4">
         <div class="sm:flex sm:gap-4">
-          <a
+          <Link
             class="rounded-md bg-blue-500 px-5 py-2.5 text-sm font-medium text-white shadow "
-            href="#"
+            to={'/login'}
           >
             Login
-          </a>
+          </Link>
 
           <div class="hidden sm:flex">
             <Link
